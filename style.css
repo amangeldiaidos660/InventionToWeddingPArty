@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Playfair+Display:ital,wght@0,400;1,500&display=swap');
+
+
+
+p{
+    color: #8F775F;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+span{
+    color: #000000;
+}
+
+.first-block {
+    position: relative;
+    clip-path: ellipse(100% 60% at 50% 35%);
+  }
+  
+  .full-width-img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .text-block {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: transparent;
+    color: black;
+    text-align: center;
+  }
+  
+  .first-paragraph {
+    font-size: 46px;
+    text-transform: uppercase;
+    color: #000000;
+
+  }
+  
+  .second-paragraph {
+    font-size: 36px;
+    text-transform: uppercase;
+    margin-top: 20px;
+    color: #000000;
+  }
+  
+  .content-block {
+    padding: 20px;
+    margin-top: 120px;
+  }
+
+  .content-block-1 {
+    padding: 20px;
+    margin-top: 50px;
+  }
+  
+  
+  .names-block {
+    text-align: center;
+    margin-top: 100px;
+
+  }
+  
+  .names {
+    font-size: 100px;
+    font-family: 'Caveat', cursive;
+
+    
+  }
+  
+  .description-block {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .description {
+    font-size: 36px;
+    text-transform: uppercase;
+    color: #000000;
+  }
+  
+  .animated-block {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .animated-text {
+    font-size: 40px;
+    margin: 20px;
+
+  }
+  
+  .icons {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .icons a {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .icon {
+    width: 75px;
+    height: 75px;
+  }
+  
+  .program-title {
+    text-align: center;
+    margin-bottom: 20px;
+    align-items: center;
+    font-size: 46px;
+    font-family: 'Playfair Display', serif;
+  }
+  
+  .program-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-left: 130px;
+    font-size: 36px;
+  }
+  
+  .program-item i {
+    margin-right: 10px;
+  }
+
+  .item-icon{
+    max-width: 60px;
+    max-height: 60px;
+    margin: 20px;
+
+  }
+  
+  .program-text {
+    margin: 0;
+  }
+  
+  .dress-code-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 46px;
+    font-family: 'Playfair Display', serif;
+  }
+  
+  .dress-code-list {
+    text-align: center;
+  }
+  
+  .dress-code-item {
+    margin-bottom: 10px;
+    font-size: 36px;
+    font-family: 'Playfair Display', serif;
+    color: #000;
+  }
+  
+  .dress-code-item i {
+    margin-bottom: 10px;
+  }
+  
+  .dress-code-text {
+    margin: 0;
+  }
+  
+  .timer-block {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .timer-title {
+    text-align: center;
+    font-size: 46px;
+    font-family: 'Playfair Display', serif;
+  }
+  
+  .timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .timer-labels {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+  
+  .timer-label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px;
+    font-size: 36px;
+    font-family: 'Playfair Display', serif;
+  }
+  
+  .timer-value {
+    font-size: 40px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+  }
+  
+  .timer-text {
+    margin-top: 5px;
+  }
+  
+  .content-block-1 form {
+    text-align: center;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 100%;
+    border-radius: 10px;
+  }
+  
+  .content-block-1 .section-title {
+    margin-bottom: 20px;
+  }
+  
+  .content-block-1 input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 36px;
+    font-family: 'Playfair Display', serif;
+  }
+  
+  .content-block-1 input[type="radio"] {
+    margin-right: 10px;
+	  transform: scale(2);
+  }
+  
+  .content-block-1 label {
+    margin-right: 15px;
+    font-size: 36px;
+    font-family: 'Playfair Display', serif;
+  }
+  
+  .content-block-1 button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #8F775F;;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 30px;
+    font-family: 'Playfair Display', serif;
+    margin-top: 10px;
+  }
+
+
+  
+  .section-title {
+    text-align: center;
+    font-size: 46px;
+    font-family: 'Playfair Display', serif;
+  }
+
+  .content-block-2{
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .content-block-2 p {
+    font-size: 35px;
+  }
+  
+  .telegram-button {
+    display: inline-block;
+    padding: 15px 25px;
+    background-color: #0088cc;
+    color: #fff;
+    font-size: 26px;
+    border-radius: 50px;
+    text-decoration: none;
+    background-color: #8F775F;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 20px;
+  }
+
+  .telegram-button:hover,
+  .telegram-button:active,
+  .telegram-button:focus
+  .telegram-button>img:hover{
+    color: #fff;
+    text-decoration: none;
+  }
+
+
+  /* Sponsorship Block */
+.sponsorship-title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+
+.content-block-2 p {
+  margin-bottom: 20px;
+}
+
+.sponsorship-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.rest{
+  font-weight: 600;
+  color: #7d6854;
+}
+
+.line{
+  border-bottom: 2px solid #7d6854;
+  margin-top: 20px;
+}
+
+
+
+
+
+  
+  
+  
+  
+  
+
+
+  
+
+  
+  

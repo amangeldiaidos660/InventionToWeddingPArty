@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Пригласительный сайт на свадьбу</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="icon" href="/img/title-img.jpg" type="image/x-icon">
+
+</head>
+<script>
+    var weddingDate = new Date("July 29, 2023 00:00:00").getTime();
+
+    // Функция для обновления таймера
+    function updateTimer() {
+      // Получаем текущую дату и время
+      var now = new Date().getTime();
+  
+      // Вычисляем оставшееся время до свадьбы
+      var remainingTime = weddingDate - now;
+  
+      // Проверяем, если время истекло
+      if (remainingTime <= 0) {
+        // Останавливаем таймер
+        clearInterval(timerInterval);
+  
+        // Отправляем уведомление браузера
+        if ('Notification' in window) {
+          Notification.requestPermission(function (permission) {
+            if (permission === 'granted') {
+              var notification = new Notification('Бүгін Санжар мен Гүлсезімнің тойы !', {
+                body: 'Бізбен бірге тойлауға келіңіз !',
+              });
+            }
+          });
+        }
+      } else {
+        // Вычисляем оставшееся время в днях, часах, минутах и секундах
+        var days = Math.floor(remainingTime / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((remainingTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((remainingTime % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((remainingTime % (1000 * 60)) / 1000);
+  
+        // Выводим оставшееся время в элементы с id "days", "hours", "minutes" и "seconds"
+        document.getElementById('days').textContent = days;
+        document.getElementById('hours').textContent = hours;
+        document.getElementById('minutes').textContent = minutes;
+        document.getElementById('seconds').textContent = seconds;
+      }
+    }
+  
+    // Запускаем таймер и обновляем его каждую секунду
+    var timerInterval = setInterval(updateTimer, 1000);
+  </script>
+
+<body>
+
+  <div class="container-fluid">
+
+    <div class="row">
+      <div class="col-md-12 p-0">
+        <div class="first-block">
+          <img src="img/title-img.jpg" alt="Фото" class="full-width-img">
+        </div>
+        <div class="text-block">
+            <div class="line"><p class="first-paragraph ">Құрметті ағайын-туыс, <br>құда-жекжат, дос-жарандар!</p></div>
+            <p class="second-paragraph">Сіздерді балалалырымыз</p>
+          </div>
+        
+      </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+          <div class="content-block">
+            <div class="names-block">
+              <p class="names">Санжар мен Гүлсезімнің</p>
+            </div>
+            <div class="description-block line">
+              <p class="description ">шаңырақ көтеру тойына арналған салтанатты дастарханымыздың <br>қадірлі қонағы болуға шақырамыз</p>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+          <div class="content-block-1 line">
+            <div class="animated-block">
+              <p class="animated-text">29.07.2023 ЖЫЛ<br> <span>cағат 18:00 де</span></p>
+              <p class="animated-text"><span class="rest">MEREY HALL ТОЙХАНАСЫ</span><br><span>Іле ауданы, Өтеген батыр ауылы, <br>Жансүгіров көшесі, 60 в</span> </p>
+              <div class="icons">
+                <a href="https://www.instagram.com/merey_hall/"><img src="img/insta.webp" alt="Instagram" class="icon"></a>
+                <a href="https://2gis.kz/almaty/firm/70000001024430813?m=77.032056%2C43.443324%2F18"><img src="img/2gis.png" alt="2GIS" class="icon"></a>
+              </div>
+            </div>
+            <div class="flower-animation"></div>
+          </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+          <div class="content-block-1  line">
+            <h2 class="program-title">Той бағдарламасы:</h2>
+              <div class="program-item">
+                <img src="img/location.jpg" class="item-icon">
+                <p class="program-text"><span>18:00 <br> Қонақтардың жиналуы</span></p>
+              </div>
+              <div class="flower-animation"class="item-icon"></div>
+              <div class="program-item">
+                <img src="img/ceremony.jpg"class="item-icon">
+                <p class="program-text"><span>20:00 <br> Құда қарсы алу</span></p>
+              </div>
+              <div class="program-item">
+                <img src="img/weddance.jpg"class="item-icon">
+                <p class="program-text"><span>22:00 <br> Қалыңдық пен күйеу жігіт вальсі</span></p>
+              </div>
+              <div class="program-item">
+                <img src="img/wedcake.jpg"class="item-icon">
+                <p class="program-text"><span>23:00 <br> Свадебный торт</span></p>
+              </div>
+              <div class="program-item ">
+                <img src="img/showdance.jpg"class="item-icon">
+                <p class="program-text"><span>24:00 <br> Музыкалық би, шоy программа</span></p>
+              </div>
+          </div>
+        </div>
+    </div>
+
+
+
+    <div class="row">
+        <div class="col-md-12">
+          <div class="content-block-1 line">
+            <div style="text-align: center;"><img src="img/smoking.jpg" class="item-icon"> </div>
+            <h2 class="dress-code-title">Дресс код</h2>
+            <div class="dress-code-list">
+              <div class="dress-code-item">
+                <p class="dress-code-text"><span>Біздің тойға сәйкес киім-кешек таңдап, мереке дресс-кодын ұстансаңыз, риза боламыз</span></p>
+              </div>
+              <div class="dress-code-item">
+                <i class="fas fa-male"></i>
+                <p class="dress-code-text"><span><b>Ерлер:</b></span></p>
+              </div>
+              <div class="dress-code-item">
+                <i class="fas fa-tie"></i>
+                <p class="dress-code-text"><span>Классикалық костюм</span></p>
+              </div>
+              <div class="dress-code-item">
+                <i class="fas fa-female"></i>
+                <p class="dress-code-text" style="margin-top: 50px;"><span><b>Қыз-келіншектер, апа-аналар:</b></span></p>
+              </div>
+              <div class="dress-code-item ">
+                <i class="fas fa-dress"></i>
+                <p class="dress-code-text"><span>Көркем, сәнді той көйлегі</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="row">
+    <div class="col-md-12">
+        <div class="content-block-1 line">
+        <h2 class="timer-title">Тойдың басталуына</h2>
+        <div class="timer-block">
+            <div id="timer" class="timer"></div>
+            <div class="timer-labels">
+                <div class="timer-label">
+                    <span class="timer-value" id="days"></span>
+                    <span class="timer-text">күн</span>
+                </div>
+                <div class="timer-label">
+                    <span class="timer-value" id="hours"></span>
+                    <span class="timer-text">сағат</span>
+                </div>
+                <div class="timer-label">
+                    <span class="timer-value" id="minutes"></span>
+                    <span class="timer-text">минут</span>
+                </div>
+                <div class="timer-label">
+                    <span class="timer-value" id="seconds"></span>
+                    <span class="timer-text">секунд</span>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-md-12">
+        <div class="content-block-1">
+          <h2 class="section-title">Тойға келесіз бе?</h2>
+          <form id="messageForm" action="responses.php" method="POST">
+            <input type="text" name="name" placeholder="Аты-жөніңізді жазыңыз" required>
+            <div>
+              <input type="radio" name="response" value="келемін бұйырса" required>
+              <label>Келемін бұйырса</label>
+            </div>
+            <div>
+              <input type="radio" name="response" value="жұбайыммен барамын" required>
+              <label>Жұбайыммен барамын</label>
+            </div>
+            <div>
+              <input type="radio" name="response" value="өкінішке орай, келе алмаймын" required>
+              <label>Өкінішке орай, келе алмаймын</label>
+            </div>
+            <button type="submit">Жауапты жіберемін</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+      <div class="row ">
+        <div class="col-md-12">
+          <div class="content-block-2 line">
+            <p><span>Құрметті қонақтар, той фотоларын төмендегі каналдан ала аласыздар!</span></p>
+            <a href="https://t.me/julywedding" class="telegram-button">
+              Телеграм каналына өту                
+              <img src="img/tele.png">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <div class="content-block-2">
+            <p>Қолдауларыңызды қабылдауға дайынбыз!</p>
+            <img src="img/qr.jpg" alt="Спонсорлық" class="sponsorship-image">
+          </div>
+        </div>
+      </div>
+      
+  </div>
+
+
+</body>
+</html>
